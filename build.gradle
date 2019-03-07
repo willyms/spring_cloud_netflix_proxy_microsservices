@@ -1,0 +1,12 @@
+apply plugin: 'base'
+
+allprojects {
+  group = 'br.com.apps'
+}
+
+subprojects {
+    apply plugin: 'java'
+    repositories {
+        mavenCentral()
+    }
+}
