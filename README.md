@@ -1,4 +1,6 @@
 # spring_cloud_netflix_proxy_microsservices
+## Diagrama
+![alt text](https://github.com/willyms/spring_cloud_netflix_proxy_microsservices/blob/master/diagram.png)
 
 ## Pré requisito
 * Gradle 5
