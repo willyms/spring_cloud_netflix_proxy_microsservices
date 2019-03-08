@@ -9,12 +9,48 @@
 ## Preparando ambiente
 ### Com plugin do eclipse
 * ```cd spring_cloud_netflix_proxy_microsservices```
-* ```gradle clean cleanEclipse```
-* ```gradle eclipse```
+* Projeto Gateway
+  * ```gradle :gateway:clean```
+  * ```gradle :gateway:cleanEclipse```
+  * ```gradle :gateway:eclipse```
+
+* Projeto Clientes
+  * ```gradle :clientes:clean```
+  * ```gradle :clientes:cleanEclipse```
+  * ```gradle :clientes:eclipse```
+
+* Projeto Produtos
+  * ```gradle :produtos:clean```
+  * ```gradle :produtos:cleanEclipse```
+  * ```gradle :produtos:eclipse```
 
 ### Sem Plugin do eclipse
 * ```cd spring_cloud_netflix_proxy_microsservices```
-* ```gradle clean build```
+* Projeto Gateway
+  * ```gradle :gateway:clean```
+  * ```gradle :gateway:build```
+
+* Projeto Clientes
+  * ```gradle :clientes:clean```
+  * ```gradle :clientes:build```
+
+* Projeto Produtos
+  * ```gradle :produtos:clean```
+  * ```gradle :produtos:build```
+  
+## Verificar os projetos 
+* ```cd spring_cloud_netflix_proxy_microsservices```
+* ```cd gradle -q project```
+###### Saída
+```------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+Root project 'spring_cloud_netflix_proxy_microsservices'
++--- Project ':clientes'
++--- Project ':gateway'
+\--- Project ':produtos'
+```
 
 ## Executando
 Service Discovery (Eureka) e Proxy
